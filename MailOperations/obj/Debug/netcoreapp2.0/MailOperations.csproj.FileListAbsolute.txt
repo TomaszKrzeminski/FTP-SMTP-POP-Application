@@ -1,0 +1,11 @@
+C:\Users\tomek\Documents\Visual Studio 2017\Projects\MailOperations\MailOperations\bin\Debug\netcoreapp2.0\MailOperations.deps.json
+C:\Users\tomek\Documents\Visual Studio 2017\Projects\MailOperations\MailOperations\bin\Debug\netcoreapp2.0\MailOperations.runtimeconfig.json
+C:\Users\tomek\Documents\Visual Studio 2017\Projects\MailOperations\MailOperations\bin\Debug\netcoreapp2.0\MailOperations.runtimeconfig.dev.json
+C:\Users\tomek\Documents\Visual Studio 2017\Projects\MailOperations\MailOperations\bin\Debug\netcoreapp2.0\MailOperations.dll
+C:\Users\tomek\Documents\Visual Studio 2017\Projects\MailOperations\MailOperations\bin\Debug\netcoreapp2.0\MailOperations.pdb
+C:\Users\tomek\Documents\Visual Studio 2017\Projects\MailOperations\MailOperations\obj\Debug\netcoreapp2.0\MailOperations.csproj.CoreCompileInputs.cache
+C:\Users\tomek\Documents\Visual Studio 2017\Projects\MailOperations\MailOperations\obj\Debug\netcoreapp2.0\MailOperations.AssemblyInfoInputs.cache
+C:\Users\tomek\Documents\Visual Studio 2017\Projects\MailOperations\MailOperations\obj\Debug\netcoreapp2.0\MailOperations.AssemblyInfo.cs
+C:\Users\tomek\Documents\Visual Studio 2017\Projects\MailOperations\MailOperations\obj\Debug\netcoreapp2.0\MailOperations.dll
+C:\Users\tomek\Documents\Visual Studio 2017\Projects\MailOperations\MailOperations\obj\Debug\netcoreapp2.0\MailOperations.pdb
+C:\Users\tomek\Documents\Visual Studio 2017\Projects\MailOperations\MailOperations\obj\Debug\netcoreapp2.0\MailOperations.csprojAssemblyReference.cache
