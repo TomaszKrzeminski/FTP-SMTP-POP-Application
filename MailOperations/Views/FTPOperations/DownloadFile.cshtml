@@ -1,4 +1,4 @@
-﻿@model List<string>
+﻿@*@model List<string>
 @{
     ViewData["Title"] = "DownloadFile";
 }
@@ -18,21 +18,18 @@
                 {
 
                     <div class="col-lg-12 form-group ">
-                       
+
                         <label>@Model[i]</label>
-                        <input type="hidden"  name="[@i].FileName" class="form-control" value=@Model[i]>
-                       
+                        <input type="hidden" name="[@i].FileName" class="form-control" value=@Model[i]>
+
                     </div>
-                    @*<div class="col-lg-12 form-group ">                      
-                                              
-                        <input  name="[@i].Download" class="form-control" value="YES">
-                    </div>*@
+                  
                     <div class="col-lg-12 form-group">
                         <select name="[@i].Download">
-                           
+
                             <option value="Download">Download</option>
                             <option value="Leave">Leave</option>
-                           
+
                         </select>
                     </div>
 
@@ -66,5 +63,83 @@
 
 
     </div>
-</div>
+</div>*@
 
+@model List<string>
+@{
+    ViewData["Title"] = "DownloadFile";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 ">
+
+        </div>
+    </div>
+    <div class="row">
+        <form asp-action="DownloadFile" method="post">
+
+
+            @if (Model.Count() > 0)
+            {
+            <div class="table-responsive-xl">
+                <table class="table table-bordered">
+
+                    <thead>
+                        <tr>
+                            <th scope="row">File </th>
+
+                            <th scope="row">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for (int i = 0; i < Model.Count(); i++)
+                        {
+
+                        <tr>
+                            <td>
+                                <h1 class="text-center">@Model[i]</h1>
+                                <input type="hidden" name="[@i].FileName" class="form-control" value=@Model[i]>
+                            </td>
+
+                            <td>
+                                <select class="form-control" name="[@i].Download">
+
+                                    <option value="Download">Download</option>
+                                    <option value="Leave">Leave</option>
+
+                                </select>
+                            </td>
+                            
+
+                        </tr>
+                        
+
+
+                        }
+                        <tr>
+                            <td colspan="2" class="text-center">
+                                <button type="submit" class="btn btn-danger">Start</button>
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+
+            </div>
+                          
+               
+
+            }
+            else
+            {
+                <h1>No files to download</h1>
+            }                            
+
+
+
+        </form>
+                                    
+    </div>
+</div>
