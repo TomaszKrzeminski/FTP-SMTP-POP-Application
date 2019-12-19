@@ -9,3 +9,14 @@ C:\Users\tomek\Documents\Visual Studio 2017\Projects\MailOperations\MailOperatio
 C:\Users\tomek\Documents\Visual Studio 2017\Projects\MailOperations\MailOperations\obj\Debug\netcoreapp2.0\MailOperations.dll
 C:\Users\tomek\Documents\Visual Studio 2017\Projects\MailOperations\MailOperations\obj\Debug\netcoreapp2.0\MailOperations.pdb
 C:\Users\tomek\Documents\Visual Studio 2017\Projects\MailOperations\MailOperations\obj\Debug\netcoreapp2.0\MailOperations.csprojAssemblyReference.cache
+C:\Users\tomek\Desktop\RepoMailOperations\MailOperations\MailOperations\bin\Debug\netcoreapp2.0\MailOperations.deps.json
+C:\Users\tomek\Desktop\RepoMailOperations\MailOperations\MailOperations\bin\Debug\netcoreapp2.0\MailOperations.runtimeconfig.json
+C:\Users\tomek\Desktop\RepoMailOperations\MailOperations\MailOperations\bin\Debug\netcoreapp2.0\MailOperations.runtimeconfig.dev.json
+C:\Users\tomek\Desktop\RepoMailOperations\MailOperations\MailOperations\bin\Debug\netcoreapp2.0\MailOperations.dll
+C:\Users\tomek\Desktop\RepoMailOperations\MailOperations\MailOperations\bin\Debug\netcoreapp2.0\MailOperations.pdb
+C:\Users\tomek\Desktop\RepoMailOperations\MailOperations\MailOperations\obj\Debug\netcoreapp2.0\MailOperations.csprojAssemblyReference.cache
+C:\Users\tomek\Desktop\RepoMailOperations\MailOperations\MailOperations\obj\Debug\netcoreapp2.0\MailOperations.csproj.CoreCompileInputs.cache
+C:\Users\tomek\Desktop\RepoMailOperations\MailOperations\MailOperations\obj\Debug\netcoreapp2.0\MailOperations.AssemblyInfoInputs.cache
+C:\Users\tomek\Desktop\RepoMailOperations\MailOperations\MailOperations\obj\Debug\netcoreapp2.0\MailOperations.AssemblyInfo.cs
+C:\Users\tomek\Desktop\RepoMailOperations\MailOperations\MailOperations\obj\Debug\netcoreapp2.0\MailOperations.dll
+C:\Users\tomek\Desktop\RepoMailOperations\MailOperations\MailOperations\obj\Debug\netcoreapp2.0\MailOperations.pdb

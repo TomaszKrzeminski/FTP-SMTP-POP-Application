@@ -13647,11 +13647,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tomek\\Documents\\Visual Studio 2017\\Projects\\MailOperations\\MailOperations\\MailOperations.csproj",
+      "projectUniqueName": "C:\\Users\\tomek\\Desktop\\RepoMailOperations\\MailOperations\\MailOperations\\MailOperations.csproj",
       "projectName": "MailOperations",
-      "projectPath": "C:\\Users\\tomek\\Documents\\Visual Studio 2017\\Projects\\MailOperations\\MailOperations\\MailOperations.csproj",
+      "projectPath": "C:\\Users\\tomek\\Desktop\\RepoMailOperations\\MailOperations\\MailOperations\\MailOperations.csproj",
       "packagesPath": "C:\\Users\\tomek\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tomek\\Documents\\Visual Studio 2017\\Projects\\MailOperations\\MailOperations\\obj\\",
+      "outputPath": "C:\\Users\\tomek\\Desktop\\RepoMailOperations\\MailOperations\\MailOperations\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

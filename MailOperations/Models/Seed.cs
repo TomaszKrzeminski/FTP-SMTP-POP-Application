@@ -41,9 +41,9 @@ namespace MailOperations.Models
                 data.Pop3_Port = 995;
                 data.Pop3_EnableSsl = true;
 
-                data.RequestUriString = @"ftp://www.TestSiteTomekKrzeminski.somee.com/www.TestSiteTomekKrzeminski.somee.com/GetUser()2.txt";
+                data.RequestUriString = @"ftp://www.TestSiteTomekKrzeminski.somee.com/www.TestSiteTomekKrzeminski.somee.com/";
                 data.FTP_Login ="Tomek";
-                data.FTP_Password = "Daria21081985@";
+                data.FTP_Password = "Sekret123@";
                 data.FTP_Path = @"C:\Users\tomek\Desktop\GetUser()2.txt";
 
                 context.Settings.Add(data);
