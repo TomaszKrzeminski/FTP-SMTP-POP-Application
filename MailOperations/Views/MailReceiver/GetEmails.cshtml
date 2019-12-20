@@ -1,0 +1,64 @@
+﻿
+@model List<OpenPop.Mime.Message>
+@{
+    ViewData["Title"] = "GetEmails";
+}
+
+
+@if(Model!=null&&Model.Count()>0)
+{
+<div class="container">
+    <div class="row">
+
+        <table class="table-bordered">
+            <thead>
+                <tr>
+                    <th>From</th>
+                    <th>Message Subject </th>
+                    <th>Open</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (var message in Model)
+                {
+
+                    <tr>
+                        <td>@message.Headers.From</td>
+                        <td>@message.Headers.Subject</td>
+                        <td>
+                            <a asp-action="ShowDetails" asp-route-id="@message.Headers.MessageId" >Show</a>
+                        </td>
+                    </tr>
+
+                }
+
+
+
+
+
+
+            </tbody>
+
+
+
+
+        </table>
+
+
+
+
+
+
+    </div>
+
+</div>
+}
+else
+{
+    <h1> No Emails</h1>
+}
+
+
+
+
