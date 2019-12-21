@@ -31,15 +31,11 @@ namespace MailOperations.Controllers
             return View(data);
         }
 
-        [HttpPost]
-        public ViewResult Settings(SettingsData data)
-        {
-            return View();
-        }
+       
 
-        public ViewResult SendEmail()
+        public ViewResult SendEmail(string Receiver= "tomaszkrzeminski21081985@gmail.com")
         {
-            MailSender newMail = new MailSender() { Receiver = "tomaszkrzeminski21081985@gmail.com", MessageTitle = "Mail title", MessageText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." };
+            MailSender newMail = new MailSender() { Receiver = Receiver, MessageTitle = "Mail title", MessageText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." };
             return View(newMail);
         }
 
@@ -50,9 +46,9 @@ namespace MailOperations.Controllers
 
             if (ModelState.IsValid)
             {
-              bool check=newMail.SendMail(data.SMTP_Host,data.SMTP_EmailAddress,newMail.Receiver,newMail.MessageTitle,newMail.MessageText,data.SMTP_Login,data.SMTP_Password,data.SMTP_EnableSsl,data.SMTP_Port);
+                bool check = newMail.SendMail(data.SMTP_Host, data.SMTP_EmailAddress, newMail.Receiver, newMail.MessageTitle, newMail.MessageText, data.SMTP_Login, data.SMTP_Password, data.SMTP_EnableSsl, data.SMTP_Port);
 
-                if(check)
+                if (check)
                 {
                     return View("Message", "Message Send");
                 }
@@ -60,7 +56,7 @@ namespace MailOperations.Controllers
                 {
                     return View("Message", "Message Send Error");
                 }
-                
+
             }
             else
             {
@@ -70,7 +66,50 @@ namespace MailOperations.Controllers
 
 
 
-           
+
+        }
+
+
+        public IActionResult SaveSettings(SettingsData data)
+        {
+
+            bool check = repository.AddSettingsData(data);
+
+            if (check)
+            {
+                return RedirectToAction("Settings");           
+            }
+            else
+            {
+                return View("Message", "Adding Error");
+            }
+
+
+
+
+
+
+        }
+
+
+
+        public IActionResult ResetSettings()
+        {
+
+
+            bool check = repository.ResetSettings();
+
+            if (check)
+            {
+                return RedirectToAction("Settings");
+            }
+            else
+            {
+                return View("Message", "Settings Reset Error");
+            }
+
+
+
         }
 
 

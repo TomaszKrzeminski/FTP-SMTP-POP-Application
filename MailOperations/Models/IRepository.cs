@@ -7,8 +7,9 @@ namespace MailOperations.Models
 {
     public interface IRepository
     {
-        void AddSettingsData(SettingsData data);
+        bool AddSettingsData(SettingsData data);
         SettingsData GetSettings();
+        bool ResetSettings();
 
     }
 
@@ -26,8 +27,22 @@ namespace MailOperations.Models
         }
 
 
-        public void AddSettingsData(SettingsData data)
+        public bool AddSettingsData(SettingsData data)
         {
+
+            try
+            {
+                context.Settings.Add(data);
+                context.SaveChanges();
+
+                return true;
+
+            }
+            catch(Exception ex)
+            {
+                return false;
+            }
+
 
         }
 
@@ -48,6 +63,25 @@ namespace MailOperations.Models
             }
 
 
+        }
+
+        public bool ResetSettings()
+        {
+            try
+            {
+                SettingsData settings=context.Settings.Find(1);
+                SettingsData data = new SettingsData();
+                data = settings.Copy();
+                context.Settings.Add(data);
+                context.SaveChanges();
+
+
+                return true;
+            }
+            catch(Exception ex)
+            {
+                return false;
+            }
         }
     }
 

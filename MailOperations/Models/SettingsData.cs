@@ -8,6 +8,18 @@ namespace MailOperations.Models
 {
     public class SettingsData
     {
+
+
+
+        public SettingsData Copy()
+        {
+             SettingsData data=  (SettingsData)this.MemberwiseClone();
+            data.SettingsDataId = 0;
+            return data;
+        }
+
+
+
         public int SettingsDataId { get; set; }
         [Required]
         public string SMTP_Login { get; set; }
@@ -29,8 +41,7 @@ namespace MailOperations.Models
         public string Pop3_Password { get; set; }
         [Required]
         public string Pop3_Host { get; set; }
-        //[Required]
-        //public string Pop3_EmailAddress { get; set; }
+       
         [Required]
         public int Pop3_Port { get; set; }
         [Required]
